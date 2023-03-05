@@ -343,6 +343,9 @@ section {
 .contact{
     background: url(Images/bg3.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
 }
 
 .contactform{
