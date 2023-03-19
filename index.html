@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
     <title>Food</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -31,6 +28,7 @@
     </header>
 
     <!-- Banner -->
+
     <section class="banner" id="banner">
         <div class="content">
             <h2>Always Choose Good</h2>
@@ -134,7 +132,7 @@
             </div>
         </div>
         <div class="title">
-            <a href="#" class="btn">View All</a>
+            <a href=".//menu.html" class="btn">View All</a>
         </div>
 
     </section>
@@ -270,7 +268,7 @@
             header.classList.toggle("sticky", window.scrollY > 80)
         })
 
-        function toggleMenu(){
+        function toggleMenu() {
             const navlinks = document.querySelector('.nav-links')
             const menuToggle = document.querySelector('.menuToggle');
             menuToggle.classList.toggle('active');
