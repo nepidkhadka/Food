@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Food</title>
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo menu-class">Food <span>.</span> </a>
+    <div class="menuToggle" onclick="toggleMenu()">
+    </div>
+    <ul class="nav-links menu-class">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+      <li><a href="#expert" onclick="toggleMenu()">Experts</a></li>
+      <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul> 
+  </header>
+
+  <!--Cart item-->
+  <section class="cart">
+  <div class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Sub-total</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/menu2.jpg" />
+            <div>
+              <p>Jeans Jackets</p>
+              <small>Price: $25.5</small><br />
+              <a href="#"> Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/menu3.jpg" />
+            <div>
+              <p>Leather Shoes</p>
+              <small>Price: $25.5</small><br />
+              <a href="#"> Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/menu4.jpg" />
+            <div>
+              <p>Hand Bags</p>
+              <small>Price: $25.5</small><br />
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$50.00</td>
+      </tr>
+    </table>
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$12.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$212.00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- copyrighttext -->
+
+  <div class="copyrighttext">
+    <p>Copyright &copy; Food 2023 | All Rights Reserved</p>
+  </div>
+
+
+  <!-- <div class="developmentspace"></div> -->
+  <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 80)
+    })
+
+    function toggleMenu() {
+      const navlinks = document.querySelector('.nav-links')
+      const menuToggle = document.querySelector('.menuToggle');
+      menuToggle.classList.toggle('active');
+      navlinks.classList.toggle('active');
+    }
+
+  </script>
+
+</body>
+
+</html>
