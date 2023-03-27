@@ -494,6 +494,41 @@ section {
 
 
 /*Cart items*/
+
+.cart img{
+  border-radius: 20%;
+}
+
+.cart a{
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.cart p{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.cart small{
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.cart td{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+.cart-title{
+  padding: 100px 0 0 0 !important;
+}
+.cart{
+  padding: 0 100px 0 100px !important;
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
 .cart-page {
   margin: 80px auto;
 }
@@ -507,13 +542,14 @@ table {
 }
 th {
   text-align: left;
-  padding: 5px;
+  padding: 30px 10px;
   color: #fff;
   background: #11101d;
-  font-weight: normal;
+  font-weight:800;
+  font-size: 2rem;
 }
 td {
-  padding: 10px 5px;
+  padding: 20px 5px;
 }
 td input {
   width: 40px;
@@ -521,8 +557,8 @@ td input {
   padding: 5px;
 }
 td a {
-  color: #ff523b;
-  font-size: 12px;
+  color:#ff0157;
+  font-size: 1.8rem;
 }
 td img {
   width: 80px;
