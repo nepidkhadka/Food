@@ -103,6 +103,10 @@
       </table>
     </div>
   </div>
+  
+      <button class="complete-order-btn">Complete Order</button>
+
+
 </section>
 
 
@@ -127,8 +131,14 @@
       menuToggle.classList.toggle('active');
       navlinks.classList.toggle('active');
     }
+    
+    document.querySelector(".complete-order-btn").addEventListener("click", ()=>{
+    alert("THANK YOU !!! Order Has Been Processed");    location.href = "/index.html";
+    window.location.href = "/index.html";
+  });
 
   </script>
+
 
 </body>
 
